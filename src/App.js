@@ -35,7 +35,7 @@ console.log(posts);
     setPosts (
       posts.map ( item => {
         if (item.id === postId) {
-          return {item, likes: (item.likes + 1)};
+          item.likes ++;
         }
         return item;
       })
